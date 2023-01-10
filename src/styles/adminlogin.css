@@ -1,0 +1,46 @@
+.adminlogin {
+    background-image: url("D:\mern\react\library management\src\images\tumblr_oqmtxgrEnj1ufqf11o2_1280.jpg");
+    background-size: cover;
+    height: 850px;
+    width: 1550px;
+    position: sticky;
+}
+
+.form {
+    width: 700px;
+    height: 400px;
+    position: relative;
+    top: 260px;
+    left: 430px;
+    background-color: rgba(210, 180, 140, 0.432);
+}
+
+.form h1 {
+    padding-top: 50px;
+    color: white;
+    margin-bottom: 10%;
+}
+
+.email-address {
+    text-decoration: none;
+    font-size: large;
+    padding: 7px 8px 7px 8px;
+    border: 3px;
+    border-radius: 10px;
+    
+}
+
+.password{
+    text-decoration: none;
+    font-size: large;
+    padding: 7px 8px 7px 8px;
+    border: 3px;
+    border-radius: 10px;
+
+}
+.btn-btn-primary{
+    margin-top: 40px;
+    text-decoration: none;
+    padding: 9px 50px 9px 50px;
+    font-size: medium;
+}

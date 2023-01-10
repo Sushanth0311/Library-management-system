@@ -1,0 +1,47 @@
+.landingpage {
+    background-image: url("D:\mern\react\library management\src\images\lms bg3.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: sticky;
+}
+
+.lmsmain {
+    width: 700px;
+    height: 400px;
+    position: relative;
+    top: 260px;
+    left: 430px;
+    background-color: rgba(192, 192, 192, 0.538);
+}
+
+.lmsmain h1 {
+    padding-top: 50px;
+    margin-bottom: 20%;
+}
+
+.btn {
+
+
+    font-size: x-large;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 3px solid whitesmoke;
+    margin: 50px;
+    padding: 7px 8px 7px 8px;
+    color: black;
+
+}
+
+
+
+.btn1 {
+    padding: left 250px;
+    text-decoration: none;
+    font-size: x-large;
+    margin: 50px;
+    padding: 7px 8px 7px 8px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: whitesmoke;
+
+}
