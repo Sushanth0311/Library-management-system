@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import '../styles/userlist.css';
 
 const Userlist = () => {
     let [users, setUsers] = useState([])
@@ -17,11 +18,11 @@ const Userlist = () => {
     // }
 
     return (
-        <div>
+        <div className="usersdiv">
             <h1>User List</h1>
             <div className="userlist">
                 {users.map(data=>(
-                <div className="user card">
+                <div className="user_card">
                     <h2>{data.name}</h2>
                     <h4>Age: <br /> {data.age}</h4>
                     <h4>Ph No: {data.phonenumber}</h4>

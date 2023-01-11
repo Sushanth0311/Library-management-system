@@ -6995,20 +6995,6 @@
       "longDescription": "22",
       "thumbnailUrl": "e",
       "id": 797
-    },
-    {
-      "name": "sushanth",
-      "number": "123",
-      "email": "admin@gmail.com",
-      "age": "23",
-      "id": 798
-    },
-    {
-      "name": "sushanth",
-      "number": "123",
-      "email": "admin@gmail.com",
-      "age": "24",
-      "id": 799
     }
   ],
   "users": [
@@ -7025,6 +7011,13 @@
       "email": "krishna@gmail.com",
       "phonenumber": "1432",
       "id": 2
+    },
+    {
+      "name": "sushanth",
+      "number": "123",
+      "email": "admin@gmail.com",
+      "age": "23",
+      "id": 3
     }
   ]
 }

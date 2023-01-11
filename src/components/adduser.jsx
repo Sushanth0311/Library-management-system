@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../styles/adduser.css"
 
 
 const Adduser = () => {
@@ -15,7 +16,7 @@ const Adduser = () => {
         let userData={name,number,email,age}
     
         //posting to server
-        fetch('http://localhost:4000/books',{
+        fetch('http://localhost:4000/users',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(userData)
@@ -27,8 +28,8 @@ const Adduser = () => {
 
 
     return (
-        <div>
-            <h1>hello</h1>
+        <div className="adduserdiv">
+            <h1>Hello</h1>
             <div className="adduser">
                 <form action="" className="formm_group" onSubmit={handleSubmit}>
                     <div className="name">
@@ -43,7 +44,7 @@ const Adduser = () => {
                     <div className="age">
                         <input type="text" onChange={(e)=>setAge(e.target.value)} value={age} required placeholder="Age" />
                     </div>
-                    <button className="">Add User</button>
+                    <button className="adduserbn">Add User</button>
                 </form>
                 
             </div>

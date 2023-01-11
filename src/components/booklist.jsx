@@ -1,9 +1,13 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import '../styles/bookslist.css';
 
 const Booklist = () => {
     let [books, setBooks] = useState([])
+
+    //to fetch the route value
+    let location=useLocation()
+
     useEffect(() => {
         let fetchData = async () => {
             let response = await fetch('http://localhost:4000/books')
@@ -20,8 +24,13 @@ const Booklist = () => {
     }
 
     let Navigate=useNavigate()
+
     let Read =(id)=>{
-        Navigate(`/admin/book-list/${id}`)
+        if (location.pathname == '/admin/book-list') {
+            Navigate(`/admin/book-list/${id}`)
+        } else {
+            Navigate(`/user/book-list/${id}`)
+        }
     }
 
     return (
@@ -40,7 +49,7 @@ const Booklist = () => {
                             <h4>Page:{data.pageCount}</h4>
                             <h4>Category:{data.categories.toString()}</h4>
                             <button className="btnn" onClick={ ()=> Read(data.id)}>Read more</button>
-                            <button onClick={() => handleDelete(data.id, data.title)}>Delete</button>
+                            { location.pathname == '/admin/book-list' && <button onClick={() => handleDelete(data.id, data.title)}>Delete</button> }
                         </div>
                     </div>
                 ))}

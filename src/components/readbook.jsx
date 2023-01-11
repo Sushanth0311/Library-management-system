@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import '../styles/readbook.css';
 
 const ReadBook = () => {
     let [book,setBook] = useState([])
@@ -17,7 +18,7 @@ const ReadBook = () => {
     
     return (
         <div className="readbook">
-            <h1>Read Book</h1>
+            <h1 className="h1">Read Book</h1>
             <h2>{book.title}</h2>
             <p>{book.shortDescription}</p>
             <p>{book.longDescription}</p>

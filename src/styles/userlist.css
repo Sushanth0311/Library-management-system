@@ -1,0 +1,12 @@
+.user_card{
+    border: 3px solid;
+    padding: 30px 30px 30px 30px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: aliceblue;
+}
+.userlist{
+    display: flex;
+    margin-left: 370px;
+    margin-top: 50px;
+}
